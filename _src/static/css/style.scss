@@ -11,7 +11,6 @@ body {
 }
 
 .intro {
-  margin-left: 2.564103% !important;
   h1 {
     font-size: 3.5em;
     margin: 20px 0;
@@ -155,7 +154,7 @@ p {
 }
 
 a.inactive {
-  color: rgba(255, 255, 255, 0.25) !important;
+  color: rgba(255, 255, 255, 0.25);
 }
 
 .span7 h4, .span4 h4 {
@@ -172,7 +171,7 @@ a.inactive {
     width: 100%;
   }
   h3 {
-    color: rgba(0, 0, 0, 0.3) !important;
+    color: rgba(0, 0, 0, 0.3);
     font-size: 1.25em;
     margin: 0;
     padding: 0;

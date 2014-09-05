@@ -186,7 +186,7 @@
     margin-left: 10px;
   }
   .col4 {
-    width:200px !important;
+    width:200px;
     text-align: center;
   }
   .col2 {
@@ -195,7 +195,7 @@
 
   }
   .col2 img {
-    max-width: 200px !important;
+    max-width: 200px;
     width:  200px !important;
 }
 #projects-description {
@@ -203,8 +203,8 @@
   float:left;
 }
 .col2.head.pull-right {
-  width:200px !important;
-  height: 130px !important;
+  width:200px;
+  height: 130px;
   float: left;
 }
 .span12 {
@@ -220,8 +220,8 @@ footer p {
 @media (max-width:775px) {
 .container-fluid, footer {
   overflow-x: hidden;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 5px;
+  padding-right: 20px;
 }
 footer .row-fluid {
   width: 50%;
@@ -272,7 +272,7 @@ p.subhead {
 }
 .span3,.span4,.span7 {
   width: 100% !important;
-  margin-left: 3.25% !important;
+  // margin-left: 3.25% !important;
   margin-bottom: 3% !important;
 }
 .as-seen-on .span2 img,.as-seen-on .span3 img {
