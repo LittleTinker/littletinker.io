@@ -285,7 +285,7 @@ footer span {
 footer {
   background-color: #262626;
   background-color: rgba(38, 38, 38, 0.96);
-  width: 100%;
+  /*width: 100%;*/
   color: #eee;
   position: relative;
   height: auto;
