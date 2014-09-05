@@ -202,7 +202,7 @@
 }
 .col2.head.pull-right {
   width:200px !important;
-  height: 130px !important;  
+  height: 130px !important;
   float: left;
 }
 .span12 {
@@ -216,21 +216,13 @@ footer p {
 }
 }
 @media (max-width:775px) {
-body {
-  padding-left: 20px;
-  padding-right: 20px;
-}
 .container-fluid, footer {
   overflow-x: hidden;
   padding-left: 0;
-  padding-right: 20px;
+  padding-right: 0;
 }
 footer .row-fluid {
   width: 50%;
-}
-.navbar-fixed-top {
-  margin-left: -20px;
-  margin-right: -20px;
 }
 [class*="span"] {
   float: left;

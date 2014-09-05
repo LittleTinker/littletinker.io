@@ -4503,18 +4503,10 @@ width:100%;
 
 }
 @media (max-width: 775px) {
-  body {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 .container-fluid {
 	padding-left: 30px;
 	padding-right: 30px;
 }
-  .navbar-fixed-top {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
   .container {
     width: auto;
   }
