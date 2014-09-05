@@ -1,5 +1,6 @@
-/* HTML5 Boilerplate */
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
+---
+---
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {display:block;}
 audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
 audio:not([controls]){display:none;}
 [hidden]{display:none;}
@@ -66,7 +67,7 @@ article,
 aside,
 details,
 figcaption,
-figure,`
+figure,
 footer,
 header,
 hgroup,
@@ -2604,7 +2605,7 @@ input[type="submit"].btn.btn-mini {*padding-top:1px;*padding-bottom:1px;
 	cursor: pointer;
 }
 .nav-tabs li:hover {
-	cursor: pointer;	
+	cursor: pointer;
 }
 .nav-pills > li > a {
 	padding-top: 8px;

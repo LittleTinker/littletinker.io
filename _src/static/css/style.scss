@@ -1,7 +1,6 @@
+---
+---
 @import url('boilerstrap.css');
-
-/* Primary Styles ======================================================================================================
-== Author:Christopher Azar=============================================================================================*/
 
 body {
   padding-top: 125px;
@@ -210,7 +209,7 @@ h2 span a {
   top: -10px;
   position: relative;
 }
-/* Twitter Widget */
+// Twitter Widget
 .twtr-scroll .twtr-timeline {
   overflow-x: hidden;
   overflow-y: auto;
@@ -285,7 +284,6 @@ footer span {
 footer {
   background-color: #262626;
   background-color: rgba(38, 38, 38, 0.96);
-  /*width: 100%;*/
   color: #eee;
   position: relative;
   height: auto;
@@ -363,15 +361,12 @@ a.btn img {
 #blog ol {
   margin-bottom: 20px;
 }
-/* Project Page Styles */
 .projects-hero-img img {
   border: 5px solid #faf04f;
   width: 100%;
   position: relative;
   z-index: -5;
 }
-
-/* Projects index styles */
 
 
 .copy h2 {
@@ -401,7 +396,6 @@ a img {
   font-size: 11px;
   line-height: 1.4em;
   float: left;
-/
 }
 
 .box h2 {
