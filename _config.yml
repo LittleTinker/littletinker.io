@@ -9,3 +9,4 @@ url: "http://littletinker.io"
 markdown: kramdown
 permalink: pretty
 source: _src
+gems: ["emoji_for_jekyll"]
