@@ -1,3 +1,5 @@
+---
+---
 /*!
 * Bootstrap Responsive v2.0.2
 *
@@ -184,7 +186,7 @@
     margin-left: 10px;
   }
   .col4 {
-    width:200px !important;
+    width:200px;
     text-align: center;
   }
   .col2 {
@@ -193,7 +195,7 @@
 
   }
   .col2 img {
-    max-width: 200px !important;
+    max-width: 200px;
     width:  200px !important;
 }
 #projects-description {
@@ -201,8 +203,8 @@
   float:left;
 }
 .col2.head.pull-right {
-  width:200px !important;
-  height: 130px !important;
+  width:200px;
+  height: 130px;
   float: left;
 }
 .span12 {
@@ -218,8 +220,8 @@ footer p {
 @media (max-width:775px) {
 .container-fluid, footer {
   overflow-x: hidden;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 5px;
+  padding-right: 20px;
 }
 footer .row-fluid {
   width: 50%;
@@ -270,7 +272,7 @@ p.subhead {
 }
 .span3,.span4,.span7 {
   width: 100% !important;
-  margin-left: 3.25% !important;
+  // margin-left: 3.25% !important;
   margin-bottom: 3% !important;
 }
 .as-seen-on .span2 img,.as-seen-on .span3 img {
@@ -862,6 +864,7 @@ div.intro img.bro {
   width: 375px;
   float: right;
   margin-right: 0;
+
   position: relative;
   right: 1%;
   z-index: -5;
@@ -899,7 +902,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 375px;
   float: right;
   margin-right: 0;
-  bottom: -30px;
   position: relative;
   right: 1%;
   z-index: -5;
@@ -915,7 +917,6 @@ div.intro img.bro {
   width: 375px;
   float: right;
   margin-right: 0;
-  bottom: -40px;
   position: relative;
   right: 1%;
   z-index: -5;
@@ -952,6 +953,6 @@ div.intro img.bro {
 @media screen and (max-width:900px) {  .top-row h1 span:after{content:'meaningful '}}
 @media screen and (max-width:800px) {  .top-row h1 span:after{content:'magical '}}
 @media screen and (max-width:700px) {  .top-row h1 span:after{content:'meaningful '}}
-@media screen and (max-width:600px) {  .top-row h1 span:after{content:'magical '}} 
+@media screen and (max-width:600px) {  .top-row h1 span:after{content:'magical '}}
 @media screen and (max-width:500px) {  .top-row h1 span:after{content:'delightful '}}
 @media screen and (max-width:400px) {  .top-row h1 span:after{content:'meaningful '}}

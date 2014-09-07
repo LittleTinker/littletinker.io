@@ -19,10 +19,10 @@ title: Little Tinker - Connecting the digital and physical world
             <h4> <a href="http://makesweetshit.tumblr.com/tagged/sweet-shit">we <i class="icon-heart icon-white"></i> making things.</a></h4>
         </div>
 
-        <div id="projects" class="span12 row-fluid">   
+        <div id="projects" class="span12 row-fluid">
         <!-- PROJECT BEGIN -->
         <div class="span4">
-                        
+
                         <a href="http://DrinkUpGame.com" target="_blank"><img src="/static/img/drinkup.png" width="90%" alt="Drinkup"></a>
                         <h2><a href="http://DrinkUpGame.com" target="_blank">#DrinkUp</a></h2>
                         <p>Twitter powered drinking game <!-- <br /> <a href="http://DrinkUpGame.com" target="_blank">DrinkUpGame.com</a> --></p>
@@ -34,73 +34,58 @@ title: Little Tinker - Connecting the digital and physical world
                           <h2><a href="http://youtu.be/vryqxVCJESQ" target="_blank" title="Prototype Video">Foursquare Gum Ball Machine</a></h2>
                           <p>Check in and enjoy a spherical confection </p>
           </div>
-        <!-- PROJECT END -->   
+        <!-- PROJECT END -->
         <!-- PROJECT BEGIN -->
           <div class="span4"><img src="/static/img/twitter-washer.png" width="90%" alt="Twitter Washer">
                           <h2>Tweeting Washer</h2>
                           <p>@TheWasher: Your clothes are clean!  </p>
           </div>
-        <!-- PROJECT END -->               
+        <!-- PROJECT END -->
           </div>
 
- 
-          
+
+
           <div class="row-fluid">
             <div class="span7">
               <div id="blog">
                <h4>RECENT SWEET SHIT</h4>
                   <span class="loading">Tinkering with Tumblr API...</span>
+
+                  <!-- Todo: get these twitter/tumblr scripts out of here -->
+
+                  <script>
+                    function tumblr(resp) {
+                        var posts = resp.posts;
+                        $('#blog .loading').replaceWith('<ul/>');
+                        $ul = $('#blog ul');
+                        for (var i=0; i<posts.length; i++) {
+                          var p = posts[i];
+                                      var title = p['regular-title'] || p['link-text'] || null, body = p['regular-body'] || null;
+                          if (title) {
+                            $ul.append('<h3><a href="'+p['url']+'">'+title+'</a></h3>');
+                            $ul.append('<p>'+body+'</p>');
+                          }
+                        }
+                      }
+                      </script>
+                      <script src="http://makesweetshit.tumblr.com/api/read/json?callback=tumblr&amp;num=1" type="text/javascript"></script>
               </div>
-               <p><a class="btn" href="http://MakeSweetShit.com"><img src="/static/img/ico/tumblr.png" width="16" height="16" alt="Tumblr"> Read More &raquo;</a></p>
+               <p><a class="btn" href="http://makesweetshit.tumblr.com"><img src="/static/img/ico/tumblr.png" width="16" height="16" alt="Tumblr"> Read More &raquo;</a></p>
             </div><!--/span-->
-            <div class="span4 tweets">
-              <h4><a href="http://youtu.be/iKmnxzleOqA" target="_blank">Tweet me maybe?</a></h4>
-                <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-                <script>
-                new TWTR.Widget({
-                  version: 2,
-                  type: 'profile',
-                  rpp: 3,
-                  interval: 30000,
-                  width: 'auto',
-                  height: 'auto',
-                  theme: {
-                    shell: {
-                      background: 'rgba(255, 255, 255, 0)',
-                      color: 'rgba(0, 0, 0, .8)'
-                    },
-                    tweets: {
-                      background: 'rgba(255, 255, 255, 0)',
-                      color: '#333333',
-                      links: '#000000'
-                    }
-                  },
-                  features: {
-                    scrollbar: true,
-                    loop: false,
-                    live: true,
-                    behavior: 'all'
-                  }
-                }).render().setUser('LittleTinkerCo').start();
-                </script>
 
-              <p><a href="https://twitter.com/LittleTinkerCo" class="twitter-follow-button btn" data-show-count="false" data-lang="en" data-size="large"></a>
-                  <a href="https://twitter.com/intent/tweet?screen_name=LittleTinkerCo" class="twitter-mention-button" data-related="jasoncosta" data-lang="en" data-size="large" data-count="none"></a>
-                  
-                  
-                  </p>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
-              
-              
-              
+          <div class="span4 tweets">
+            <h4><a href="http://youtu.be/iKmnxzleOqA" target="_blank">Tweet me maybe?</a></h4>
 
+            <a class="twitter-timeline" href="https://twitter.com/LittleTinkerCo" data-widget-id="388140987970637824" data-chrome="nofooter transparent" width="100%" height="400"></a>
+
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
             </div><!--/span-->
           </div><!--/row-->
 
-      
-      <div class="row-fluid span11 featured-on">        
-           <h4 class="as-seen-on-heading" >These Guys Like us</h4> 
+
+      <div class="row-fluid span11 featured-on">
+           <h4 class="as-seen-on-heading" >These Guys Like us</h4>
            </div>
                <div class="row-fluid as-seen-on">
                  <div class="span3">
@@ -112,10 +97,10 @@ title: Little Tinker - Connecting the digital and physical world
                    </div><!--/span-->
                  <div class="span3">
                      <a href="http://aboutfoursquare.com/gumball-machine-powered-by-foursquare-check-ins/" target="_blank" title="About Foursquare: Gumball machine powered by foursquare check-ins"><img src="/static/img/about4sq.png" width="65%" alt="About Foursquare"></a>
-                     
+
                      </div><!--/span-->
                  <div class="span3">
                       <a href="http://www.dailyorange.com/feature/the-standouts/the-tinker-isaac-budmen-1.2864346#.T59UW8RYtcs" target="_blank" title="The Daily Orange 'The tinkerer: Isaac Budmen'"><img src="/static/img/do.png" width="85%" alt="The Daily Orange"></a>
                    </div><!--/span-->
-               </div><!--/row-->          
+               </div><!--/row-->
              </div><!--/span-->
